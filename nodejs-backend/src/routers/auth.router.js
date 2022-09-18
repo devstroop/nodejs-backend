@@ -31,6 +31,7 @@ authRouter.post('/api/signup', async (req, res) => {
     }
 });
 
+/// Sign In /
 authRouter.post('/api/signin', async (req, res) => {
     try {
         const {email, password} = req.body;
@@ -55,6 +56,7 @@ authRouter.post('/api/signin', async (req, res) => {
     }
 });
 
+/// Forgot Password /
 authRouter.post('/api/forgot-password', async (req, res) => {
     try {
         const { email } = req.body;
@@ -83,7 +85,7 @@ authRouter.post('/api/forgot-password', async (req, res) => {
     }
 });
 
-
+/// Reset Password /
 authRouter.post('/api/reset-password/:id/:token', async (req, res) => {
     try {
         const { id, token } = req.params;
@@ -119,7 +121,8 @@ authRouter.post('/api/reset-password/:id/:token', async (req, res) => {
     }
 });
 
-authRouter.get('/', userMiddleware, async(req, res) => {
+/// Profile /
+authRouter.get('/api/profile', userMiddleware, async(req, res) => {
     const user = await User.findById(req.user);
     res.json({ ...user._doc, token: req.token });
 });

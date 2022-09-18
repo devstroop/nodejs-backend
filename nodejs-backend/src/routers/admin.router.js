@@ -7,8 +7,8 @@ const adminMiddleware = require('../middlewares/admin.middleware');
 const adminRouter = express.Router();
 
 /// Sign Up /
-adminRouter.post('/api/test', adminMiddleware, async (req, res) => {
-    res.json({ msg: 'TEST PASSED' });
+adminRouter.post('/api/admin', adminMiddleware, async (req, res) => {
+    res.json({ msg: 'SUCCESS' });
 });
 
 module.exports = adminRouter;
