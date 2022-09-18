@@ -1,4 +1,4 @@
-# nodejs-backend
+# Node.js (backend)
 ## Sign Up
 Register new user
 > /api/signup
