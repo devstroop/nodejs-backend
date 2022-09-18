@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-backend-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "Akash Shah",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
