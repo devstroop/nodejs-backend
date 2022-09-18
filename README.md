@@ -1,4 +1,21 @@
 # nodejs-backend
+## Sign Up
+### /api/signup
+```
+{
+  "name": "User",
+  "email": "user@example.com",
+  "password": "password"
+}
+```
+## Sign In
+### /api/signin
+```
+{
+  "email": "user@example.com",
+  "password": "password"
+}
+```
 
 ## Reset Password
 ### /api/forgot-password
