@@ -1,6 +1,7 @@
 # nodejs-backend
 ## Sign Up
-### /api/signup
+Register new user
+> /api/signup
 ```
 {
   "name": "User",
@@ -9,7 +10,7 @@
 }
 ```
 ## Sign In
-### /api/signin
+> /api/signin
 ```
 {
   "email": "user@example.com",
@@ -18,7 +19,7 @@
 ```
 
 ## Reset Password
-### /api/forgot-password
+> /api/forgot-password
 ```
 {
   "email": "user@example.com"
@@ -26,8 +27,8 @@
 ```
 Magic link will be logged in console, same should be mailed to registered email
 
-### Call magic link with body
-#### /api/reset-password/xxxxxxxx/xxxxxxxx
+> Call magic link with body
+> /api/reset-password/xxxxxxxx/xxxxxxxx
 ```
 {
   "password": "newPassword",
