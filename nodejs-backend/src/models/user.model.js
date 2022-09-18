@@ -33,7 +33,7 @@ const schema = mongoose.Schema({
         enum: ['user', 'admin'],
         default: 'user',
     }
-});
+}, { timestamps: true });
 
 const User = mongoose.model('User', schema);
 module.exports = User;
