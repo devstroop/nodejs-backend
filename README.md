@@ -9,7 +9,7 @@
 ```
 Magic link will be logged in console, same should be mailed to registered email
 
-### Call magic link should look like
+### Call magic link with body
 #### /api/reset-password/xxxxxxxx/xxxxxxxx
 ```
 {
